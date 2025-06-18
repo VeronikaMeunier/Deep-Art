@@ -134,7 +134,7 @@ def train(model, input_img, epochs, content_features, style_features,
     with col2:
         my_image = st.image(to_pil_image(input_img.squeeze(0).cpu()))
 
-    col1, col2, col3 = st.columns([2, 3, 2])
+    col1, col2, col3 = st.columns([3.5, 3, 2])
     with col1:
         time_metric = st.metric("Elapsed time", None)
 
