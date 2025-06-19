@@ -201,6 +201,7 @@ def train(model, input_img, epochs, content_features, style_features,
         input_img.clamp_(0, 1)
 
     progress_bar.empty()
+    st.session_state['total_count_stylized'] += 1
 
     img_pil = to_pil_image(input_img.squeeze(0).cpu())
     buffer = BytesIO()

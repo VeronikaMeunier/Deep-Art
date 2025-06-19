@@ -102,7 +102,7 @@ class ResNet(nn.Module):
 
 def load_model():
     resnet = ResNet()
-    resnet.load_state_dict(torch.load("./resources/resnet_7.pt"))
+    resnet.load_state_dict(torch.load("streamlit/resources/resnet_7.pt"))
     resnet.eval()
 
     return resnet
